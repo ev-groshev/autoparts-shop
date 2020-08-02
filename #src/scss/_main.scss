@@ -1,0 +1,167 @@
+/* start header__top */
+
+.header__top {
+	@extend %arial-regular;
+	font-size: 20px;
+
+	&-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 122px;
+	}
+
+	.menu__item {
+		display: inline-block;
+		@extend %arial-bold;
+
+		&+.menu__item {
+			margin-left: 50px;
+		}
+	}
+
+	&-box {
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+	}
+
+	&-adress {
+		position: relative;
+		max-width: 320px;
+		margin-right: 37px;
+		padding-left: 10px;
+		margin-top: 25px;
+		@extend %arial-bold;
+
+		&::before {
+			position: absolute;
+			content: "";
+			background-image: url("../images/icon/maps.svg");
+			width: 27px;
+			height: 35px;
+			left: -20px;
+			bottom: 15px;
+		}
+
+
+	}
+
+	.user__list {
+		display: flex;
+		align-items: center;
+	}
+
+	.user__item {
+		margin-right: 35px;
+	}
+
+	.heart {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: "";
+			background-image: url("../images/icon/heart.svg");
+			background-repeat: no-repeat;
+			width: 27px;
+			height: 25px;
+
+		}
+	}
+
+	.user {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: "";
+			background-image: url("../images/icon/user.svg");
+			background-repeat: no-repeat;
+			width: 27px;
+			height: 25px;
+
+		}
+	}
+
+	.basket {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: "";
+			background-image: url("../images/icon/basket.svg");
+			background-repeat: no-repeat;
+			width: 30px;
+			height: 30px;
+			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+		}
+
+
+
+		&__num {
+			position: absolute;
+			bottom: -35px;
+			right: -40px;
+			width: 23px;
+			height: 23px;
+			border-radius: 50%;
+			background-color: $orange;
+			text-align: center;
+			font-size: 12px;
+			color: #fff;
+			line-height: 23px;
+			@extend %arial-bold;
+
+
+		}
+	}
+}
+
+/* end header__top */
+
+/* start header__bottom */
+.header__bottom {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+
+	.menu-categories {
+		display: flex;
+		justify-content: space-between;
+
+		&__link {
+			display: block;
+			position: relative;
+			padding-bottom: 14px;
+			padding-top: 15px;
+
+			&:hover {
+				opacity: 0.6;
+			}
+
+			&.active {
+				font-weight: 700;
+				opacity: 1;
+				cursor: default;
+
+				&:before {
+					content: "";
+					display: block;
+					position: absolute;
+					bottom: -2px;
+					left: -12px;
+					right: -12px;
+					height: 3px;
+					background-color: $orange;
+				}
+
+
+			}
+		}
+
+	}
+}
+
+/* end header__bottom */
