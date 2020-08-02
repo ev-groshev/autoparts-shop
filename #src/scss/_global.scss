@@ -33,10 +33,24 @@ a {
 	color: inherit;
 }
 
-ul, li {
+ul,
+li {
 	list-style: none;
 }
+
 button:focus,
 input:focus {
 	outline: transparent;
+}
+
+body {
+	@extend %arial-regular;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
