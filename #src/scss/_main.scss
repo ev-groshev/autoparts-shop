@@ -20,6 +20,10 @@
 		}
 	}
 
+	.menu__link:hover {
+		opacity: 0.6;
+	}
+
 	&-box {
 		display: flex;
 		align-items: center;
@@ -125,6 +129,7 @@
 .header__bottom {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 78px;
 
 
 	.menu-categories {
@@ -165,3 +170,214 @@
 }
 
 /* end header__bottom */
+
+/* start banner-section */
+.banner-section {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__slider {
+		max-width: 870px;
+
+		&-btn {
+			position: absolute;
+			border: none;
+			border-radius: 50%;
+			width: 36px;
+			height: 36px;
+			z-index: 5;
+			background-color: rgba(255, 255, 255, 0.3);
+			top: 50%;
+			transform: translateY(-50%);
+
+			img {
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		&-btnprev {
+			left: 10px;
+		}
+
+		&-btnnext {
+			right: 10px;
+		}
+
+		.slick-dots {
+			position: absolute;
+			left: 0;
+			right: 0;
+			text-align: center;
+			bottom: 40px;
+		}
+
+		.slick-dots li {
+			display: inline-block;
+			padding: 0 9px;
+		}
+
+		.slick-dots button {
+			font-size: 0;
+			margin: 0;
+			padding: 0;
+			width: 11px;
+			height: 11px;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			background-color: transparent;
+		}
+
+		.slick-active button {
+			background-color: #fff;
+		}
+
+	}
+
+	.action {
+		max-width: 270px;
+		max-height: 400px;
+		width: 100%;
+		border: 1px solid #CDCDCD;
+		border-radius: 3px;
+		text-align: center;
+
+		&__inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+
+		}
+
+		&__info {
+			position: relative;
+
+			&-text {
+				padding: 6px 15px;
+				@extend %arial-bold;
+				font-size: 12px;
+				line-height: 14px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #fff;
+				background-image: linear-gradient(93.47deg, #9710E9 1.17%, #FD8D43 99.31%);
+				transform: rotate(-90deg);
+				left: -27px;
+				top: 25px;
+				position: absolute;
+			}
+		}
+
+		&__price {
+			margin-right: 19px;
+			margin-top: 15px;
+			text-align: right;
+
+			&-new {
+				position: relative;
+				@extend %arial-bold;
+				color: $orange;
+				font-size: 27px;
+				line-height: 31px;
+				padding-right: 28px;
+
+				&::after {
+					position: absolute;
+					content: "";
+					background-image: url("../images/rouble-new.svg");
+					width: 16px;
+					height: 20px;
+					right: 0;
+					top: 5px;
+				}
+			}
+
+			&-old {
+				position: relative;
+				@extend %arial-regular;
+				color: $silver;
+				padding-right: 28px;
+				padding-left: 10px;
+				background-image: url("../images/old-line.svg");
+				background-repeat: no-repeat;
+
+				&::after {
+					position: absolute;
+					content: "";
+					background-image: url("../images/rouble-old.svg");
+					width: 12px;
+					height: 15px;
+					right: 0;
+					top: 3px;
+				}
+			}
+
+
+		}
+
+		&__img {
+			max-width: 150px;
+			background-size: cover;
+			margin-bottom: 15px;
+		}
+
+		&__title {
+			@extend %arial-bold;
+			font-size: 23px;
+			line-height: 26px;
+			margin-bottom: 12px;
+		}
+
+		&__footer {
+			padding-top: 15px;
+			background-color: #F0F0F4;
+			margin-bottom: 10px;
+
+			&-text {
+				@extend %arial-regular;
+				font-size: 18px;
+			}
+		}
+
+		.countdown {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: "";
+				background-image: url("../images/icon/timer.svg");
+				width: 28px;
+				height: 28px;
+				left: 30px;
+				top: 5px;
+			}
+
+			&-dial {
+				display: inline-block;
+				position: relative;
+
+				&:not(:last-child)::after {
+					position: absolute;
+					content: ":";
+					right: -4px;
+					bottom: 25px;
+				}
+			}
+
+			&__number {
+				@extend %arial-bold;
+				font-size: 20px;
+				padding: 0 10px;
+			}
+
+			&__caption {
+				font-size: 10px;
+			}
+		}
+	}
+}
+
+/* end banner-section */
