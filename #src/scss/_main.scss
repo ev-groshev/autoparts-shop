@@ -191,6 +191,7 @@
 			background-color: rgba(255, 255, 255, 0.3);
 			top: 50%;
 			transform: translateY(-50%);
+			cursor: pointer;
 
 			img {
 				position: absolute;
@@ -381,3 +382,65 @@
 }
 
 /* end banner-section */
+
+/* start search */
+.search {
+	&__tabs {
+		margin-bottom: 38px;
+	}
+
+	&__tabs-item {
+		padding: 12px 20px;
+		color: #000;
+	}
+
+	&__tabs-item--active {
+		font-weight: 700;
+		background-color: $gray;
+		border-radius: 5px;
+	}
+
+	&__content {
+		&-form {
+			display: flex;
+		}
+
+		&-item {
+			display: none;
+		}
+
+		&-item--active {
+			display: block;
+		}
+
+		&-input {
+			width: 100%;
+			background-color: $gray;
+			border: none;
+			border-radius: 3px;
+			padding: 5px 20px;
+			font-size: 16px;
+			line-height: 18px;
+
+			&::placeholder {
+				color: #656464;
+			}
+		}
+
+		&-btn {
+			@extend %arial-bold;
+			font-size: 14px;
+			line-height: 16px;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: #fff;
+			background-color: $orange;
+			border: none;
+			border-radius: 3px;
+			padding: 17px 41px;
+			margin-left: -3px;
+		}
+	}
+}
+
+/* end search */

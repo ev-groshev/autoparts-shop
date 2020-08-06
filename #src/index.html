@@ -12,7 +12,8 @@
 <body>
 
 	@@include("components/_header.html")
-	<section class="banner-section">
+	<!-- banner-section -->
+	<section class="banner-section page-section">
 		<div class="container">
 			<div class="banner-section__inner">
 				<div class="banner-section__slider">
@@ -78,7 +79,47 @@
 		</div>
 		</div>
 	</section>
+	<!-- end banner-section -->
 
+	<!-- start search -->
+	<div class="search page-section">
+		<div class="container">
+			<div class="search__tabs">
+				<a class="search__tabs-item search__tabs-item--active" href="#tab1">Поиск по Vin</a>
+				<a class="search__tabs-item" href="#tab2">Поиск по марке</a>
+				<a class="search__tabs-item" href="#tab3">Поиск по названию товара</a>
+				<a class="search__tabs-item" href="#tab4">Поиск по артикулу</a>
+			</div>
+
+			<div class="search__content">
+				<div class="search__content-item search__content-item--active" id="tab1">
+					<form class="search__content-form">
+						<input class="search__content-input" type="text" placeholder="Введите Vin номер">
+						<button class="search__content-btn" type="submit">Искать</button>
+					</form>
+				</div>
+				<div class="search__content-item" id="tab2">
+					<form class="search__content-form">
+						<input class="search__content-input" type="text" placeholder="Введите марку автомобиля">
+						<button class="search__content-btn" type="submit">Искать</button>
+					</form>
+				</div>
+				<div class="search__content-item" id="tab3">
+					<form class="search__content-form">
+						<input class="search__content-input" type="text" placeholder="Введите название товара">
+						<button class="search__content-btn" type="submit">Искать</button>
+					</form>
+				</div>
+				<div class="search__content-item" id="tab4">
+					<form class="search__content-form">
+						<input class="search__content-input" type="text" placeholder="Введите артикул">
+						<button class="search__content-btn" type="submit">Искать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search -->
 
 	@@include("components/_footer.html")
 
