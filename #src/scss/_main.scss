@@ -521,3 +521,276 @@
 }
 
 /* end section categories */
+
+/* section products */
+.products {
+	&__title {
+		@extend %arial-bold;
+		font-size: 25px;
+		line-height: 29px;
+		margin-bottom: 25px;
+	}
+
+	&__item {
+		padding-bottom: 11px;
+		font-size: 15px;
+		line-height: 17px;
+
+		&.tab--active {
+			border-bottom: 2px solid $orange;
+			font-weight: 700;
+		}
+
+		&+.products__item {
+			margin-left: 70px;
+		}
+	}
+
+	&__container {
+		margin-top: 25px;
+	}
+
+	&__more {
+		margin-top: 35px;
+		text-align: center;
+
+		&-link {
+			text-align: center;
+			@extend %arial-bold;
+			font-size: 15px;
+			line-height: 17px;
+			text-align: center;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			padding: 17px 43px 15px;
+			background-color: $gray;
+			color: $light-gray;
+		}
+	}
+}
+
+.products-slider {
+	.slick-slide img {
+		display: inline;
+	}
+
+	&__btn {
+		position: absolute;
+		border: none;
+		border-radius: 50%;
+		width: 36px;
+		height: 36px;
+		z-index: 5;
+		background-color: #fff;
+
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+
+		img {
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			filter: brightness(.6);
+		}
+	}
+
+	&__btnprev {
+		left: -50px;
+	}
+
+	&__btnnext {
+		right: -40px;
+	}
+}
+
+
+.product {
+	position: relative;
+	width: 270px;
+	height: 403px;
+	border: 1px solid #CDCDCD;
+	border-radius: 3px;
+	text-align: center;
+	padding: 0 20px;
+
+	&--sale {
+		&::before {
+			position: absolute;
+			content: "SALE";
+			background-image: linear-gradient(91.1deg, #9710E9 1.17%, #FD8D43 99.31%);
+			padding: 6px 15px;
+			color: #fff;
+			@extend %arial-bold;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.07em;
+			transform: rotate(-90deg);
+			left: -20px;
+			top: 19px;
+		}
+	}
+
+	&--winter,
+	&--summer {
+		.product__favorite {
+			right: 60px;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			background-image: url("../images/product-winter.svg");
+			background-repeat: no-repeat;
+			width: 30px;
+			height: 30px;
+			right: 20px;
+			top: 15px;
+
+		}
+	}
+
+	&--summer {
+		&::after {
+			background-image: url("../images/product-summer.svg");
+			width: 32px;
+		}
+	}
+
+
+
+	&__favorite {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		background-image: url("../images/favorite.svg");
+		width: 30px;
+		height: 27px;
+		border: none;
+		background-color: transparent;
+		background-repeat: no-repeat;
+
+		&--active {
+			background-image: url("../images/favorite-active.svg");
+		}
+	}
+
+	&__basket {
+		position: absolute;
+		background-color: $orange;
+		border-radius: 10px 0px 0px 0px;
+		right: 0;
+		bottom: 0;
+		width: 60px;
+		height: 40px;
+		border: none;
+		cursor: pointer;
+
+		img {
+			margin-top: 3px;
+		}
+
+	}
+
+	&__info {
+		margin-top: 50px;
+
+		&:hover {
+			.product__hover-text {
+				display: block;
+			}
+
+			.product__title {
+				color: $orange;
+			}
+
+			.product__price {
+				color: $orange;
+			}
+		}
+	}
+
+	&__hover-text {
+		display: none;
+		position: absolute;
+		padding: 18px 27px;
+		background-color: rgba(#fff, .9);
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+		border-radius: 3px;
+		top: 122px;
+	}
+
+	&__picture {
+		width: 230px;
+		height: 215px;
+		margin-bottom: 15px;
+	}
+
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		height: 50px;
+	}
+
+	&__price {
+		position: relative;
+		@extend %arial-bold;
+		font-size: 30px;
+		line-height: 34px;
+
+		&::after {
+			position: absolute;
+			content: "₽";
+			font-size: 24px;
+			top: 2px;
+			margin-left: 5px;
+		}
+	}
+
+	&__notify-text {
+		display: none;
+	}
+
+	&__notify-link {
+		display: none;
+	}
+
+	&__notify {
+		.product__notify-text {
+			display: block;
+			@extend %arial-bold;
+			font-size: 18px;
+			line-height: 21px;
+			margin-top: -5px;
+		}
+
+		.product__notify-link {
+			position: absolute;
+			display: block;
+			font-size: 16px;
+			line-height: 18px;
+			color: $orange;
+			left: 0;
+			right: 0;
+			bottom: 20px;
+			text-decoration: underline;
+		}
+
+		.product__price {
+			display: none;
+		}
+
+		.product__basket {
+			display: none;
+		}
+	}
+}
+
+/* end  section products */

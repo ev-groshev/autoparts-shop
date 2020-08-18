@@ -19,4 +19,15 @@ $(function () {
 		$(this).addClass('tab--active');
 		$($(this).attr('href')).addClass('tabs__content--active');
 	});
+
+	$('.product__favorite').on('click', function () {
+		$(this).toggleClass('product__favorite--active');
+	});
+
+	$('.products-slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<button class="products-slider__btn products-slider__btnprev"><img src="images/arrows-right.svg" alt=""></button>',
+		nextArrow: '<button class="products-slider__btn products-slider__btnnext"><img src="images/arrows-left.svg" alt=""></button>',
+	});
 });
