@@ -384,6 +384,14 @@
 /* end banner-section */
 
 /* start search */
+.tabs__content {
+	display: none;
+}
+
+.tabs__content.tabs__content--active {
+	display: block;
+}
+
 .search {
 	&__tabs {
 		margin-bottom: 38px;
@@ -394,24 +402,20 @@
 		color: #000;
 	}
 
-	&__tabs-item--active {
+	& .tab--active {
 		font-weight: 700;
 		background-color: $gray;
 		border-radius: 5px;
 	}
+
+
 
 	&__content {
 		&-form {
 			display: flex;
 		}
 
-		&-item {
-			display: none;
-		}
 
-		&-item--active {
-			display: block;
-		}
 
 		&-input {
 			width: 100%;
