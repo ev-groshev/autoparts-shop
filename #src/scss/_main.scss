@@ -794,3 +794,82 @@
 }
 
 /* end  section products */
+
+/* footer */
+.footer {
+	background-color: #F4F4F6;
+
+	&__top {
+		padding-top: 42px;
+
+		&-inner {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&-title {
+			@extend %arial-bold;
+			font-size: 14px;
+			line-height: 16px;
+		}
+
+		&-newslatter {
+			width: 294px;
+		}
+
+		.footer-form {
+			margin-top: 35px;
+			display: flex;
+
+			&__input {
+				width: 175px;
+				padding: 0 12px;
+				border: none;
+				font-size: 14px;
+				line-height: 16px;
+
+				&::placeholder {
+					color: #A5A5A5;
+				}
+			}
+
+			&__btn {
+				padding: 10px 20px;
+				background-color: $orange;
+				color: #fff;
+				@extend %arial-bold;
+				font-size: 11px;
+				line-height: 13px;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				border: none;
+			}
+		}
+
+		.footer-list {
+			margin-top: 5px;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		&-inetshop {
+			max-width: 357px;
+
+			.footer-list {
+				columns: 2;
+			}
+		}
+	}
+
+	&__bottom {
+		padding-bottom: 42px;
+
+		&-link {
+			font-size: 12px;
+			line-height: 14px;
+			color: #A5A5A5;
+		}
+	}
+}
+
+/* end footer */
