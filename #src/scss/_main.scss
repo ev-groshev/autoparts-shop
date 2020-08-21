@@ -873,3 +873,33 @@
 }
 
 /* end footer */
+
+/* breadcrumps */
+.breadcrumps {
+	&__list-item {
+		display: inline-block;
+		padding-right: 15px;
+		margin-right: 10px;
+		position: relative;
+		font-size: 15px;
+		line-height: 17px;
+		color: #CDCDCD;
+
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 6px;
+			height: 12px;
+			background-image: url("../images/icon/link-arrows.svg");
+			right: 0;
+			bottom: 1px;
+		}
+
+		&:last-child::after {
+			display: none;
+		}
+	}
+}
+
+/* end breadcrumps */
