@@ -30,8 +30,11 @@
 		"gulp-ttf2woff": "^1.1.1",
 		"gulp-ttf2woff2": "^3.0.0",
 		"gulp-uglify-es": "^2.0.0",
+		"ion-rangeslider": "^2.3.1",
 		"jquery-countdown": "^2.2.0",
+		"jquery-form-styler": "^2.0.2",
 		"normalize.css": "^8.0.1",
+		"rateyo": "^2.3.5",
 		"slick-carousel": "^1.8.1"
 	}
 }

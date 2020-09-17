@@ -42,38 +42,271 @@
 					<a class="catalog__filter-item" href="#">еще</a>
 				</div>
 				<div class="catalog__filter-btn">
-					<select>
+					<select class="filter-style filter-style__popularity">
 						<option>По полулярности</option>
-						<option>По полулярности</option>
+						<option>от меньшего</option>
 					</select>
 
-					<button class="catalog__filter-btngrid">
-						<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect x="1" y="1" width="21" height="19" stroke="#48494D" stroke-width="2" />
-							<rect x="6" y="5" width="4" height="4" fill="#48494D" />
-							<rect x="6" y="12" width="4" height="4" fill="#48494D" />
-							<rect x="13" y="5" width="4" height="4" fill="#48494D" />
-							<rect x="13" y="12" width="4" height="4" fill="#48494D" />
-						</svg>
-					</button>
-					<button class="catalog__filter-btnline">
-						<svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g opacity="1">
-								<rect x="6" width="19" height="3" rx="1.5" fill="#48494D" />
-								<rect x="6" y="8" width="19" height="3" rx="1.5" fill="#48494D" />
-								<rect x="6" y="16" width="19" height="3" rx="1.5" fill="#48494D" />
-								<rect width="3" height="3" rx="1.5" fill="#48494D" />
-								<rect y="8" width="3" height="3" rx="1.5" fill="#48494D" />
-								<rect y="16" width="3" height="3" rx="1.5" fill="#48494D" />
-							</g>
-						</svg>
-					</button>
+					<div class="button">
+						<button class="catalog__filter-btngrid catalog__filter-button catalog__filter-button--active">
+							<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="1" y="1" width="21" height="19" stroke="#48494D" stroke-width="2" />
+								<rect x="6" y="5" width="4" height="4" fill="#48494D" />
+								<rect x="6" y="12" width="4" height="4" fill="#48494D" />
+								<rect x="13" y="5" width="4" height="4" fill="#48494D" />
+								<rect x="13" y="12" width="4" height="4" fill="#48494D" />
+							</svg>
+						</button>
+						<a class="catalog__filter-btnline catalog__filter-button" href="#">
+							<svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="1">
+									<rect x="6" width="19" height="3" rx="1.5" fill="#48494D" />
+									<rect x="6" y="8" width="19" height="3" rx="1.5" fill="#48494D" />
+									<rect x="6" y="16" width="19" height="3" rx="1.5" fill="#48494D" />
+									<rect width="3" height="3" rx="1.5" fill="#48494D" />
+									<rect y="8" width="3" height="3" rx="1.5" fill="#48494D" />
+									<rect y="16" width="3" height="3" rx="1.5" fill="#48494D" />
+								</g>
+							</svg>
+						</a>
+					</div>
+
 				</div>
 			</div>
 
 			<div class="catalog__wrapper">
-				<aside class="left__filters"></aside>
+				<aside class="left-filters">
+					<div class="tabs left-filters__tabs">
+						<a class="tab left-filters__tab tab--active" href="#left-filter__1">Параметры</a>
+						<a class="tab left-filters__tab" href="#left-filter__2">по марке</a>
+					</div>
 
+					<div class="tabs__container left-filters__container">
+						<div class="tabs__content  left-filters__content tabs__content--active" id="left-filter__1">
+
+							<form class="left-filter__form">
+								<ul class="left-filter__list">
+
+									<li class="left-filter__item-drop">
+										<div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Сезонность</div>
+
+										<div class="left-filter__item-box">
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style" type="checkbox">
+													Зимние <span class="question" title="Зимние шины"></span>
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style" type="checkbox">
+													Летние
+												</label>
+											</div>
+										</div>
+									</li>
+
+									<li class="left-filter__item-drop">
+										<div class="left-filter__item-title">Тип шин</div>
+
+										<div class="left-filter__item-box">
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style" type="checkbox" checked>
+													Все
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style" type="checkbox">
+													Шипованные <span class="question" title="Шипованные шины"></span>
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style" type="checkbox">
+													Нешипованные <span class="question" title="Нешипованные шины"></span>
+												</label>
+											</div>
+										</div>
+									</li>
+
+									<li class="left-filter__item-drop">
+										<div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Цена</div>
+
+										<div class="left-filter__item-box">
+
+
+											<input type="text" class="js-range-slider" data-min="2000" data-max="12000" data-from="2700"
+												data-to="7000">
+										</div>
+									</li>
+									<li class="left-filter__item-drop">
+										<div class="filter-box">
+											<div class="left-filter__item-title">Диаметр <span class="question" title="Диаметр"></span></div>
+											<select class="filter-style left-filter__item-select">
+												<option>205</option>
+												<option>210</option>
+												<option>215</option>
+												<option>220</option>
+											</select>
+										</div>
+										<div class="filter-box">
+											<div class="left-filter__item-title">Профиль <span class="question" title="Профиль"></span></div>
+											<select class="filter-style left-filter__item-select">
+												<option>123</option>
+												<option>125</option>
+												<option>130</option>
+												<option>135</option>
+											</select>
+										</div>
+										<div class="filter-box">
+											<div class="left-filter__item-title">Ширина <span class="question" title="Ширина"></span></div>
+											<select class="filter-style left-filter__item-select">
+												<option>85</option>
+												<option>90</option>
+												<option>95</option>
+												<option>100</option>
+											</select>
+										</div>
+									</li>
+
+									<li class="left-filter__item-drop">
+										<div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Бренд</div>
+
+										<div class="left-filter__item-box">
+											<input class="filter-item__search" type="text" placeholder="Введите бренд шины">
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox" checked>
+													B Gudrich
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox" checked>
+													Wridrestone
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox">
+													Rarym
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox">
+													BF hide
+												</label>
+											</div>
+
+											<a class="show-more" href="#">Показать еще</a>
+										</div>
+									</li>
+
+									<li class="left-filter__item-drop">
+										<div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Модель</div>
+
+										<div class="left-filter__item-box">
+											<input class="filter-item__search" type="text" placeholder="Введите модель шины">
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox" checked>
+													ALINA
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox" checked>
+													BLIWWAS
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox">
+													FORCE Moode
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox">
+													ICE Gide
+												</label>
+											</div>
+
+											<a class="show-more" href="#">Показать еще</a>
+										</div>
+									</li>
+
+									<li class="left-filter__item-drop">
+										<div class="left-filter__item-title">Технология
+											<span class="question" title="Технология"></span></div>
+										<div class="left-filter__item-box">
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox">
+													Да
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox">
+													Нет </label>
+											</div>
+										</div>
+									</li>
+
+
+
+									<li class="left-filter__item-drop">
+										<div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Страны</div>
+
+										<div class="left-filter__item-box">
+
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox" checked>
+													Россия
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox" checked>
+													Германия
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox">
+													Россия
+												</label>
+											</div>
+											<div class="left-filter__item-input">
+												<label class="left-filter__item-label">
+													<input class="filter-style filter-style__other" type="checkbox">
+													Германия
+												</label>
+											</div>
+
+											<a class="show-more" href="#">Показать еще</a>
+										</div>
+									</li>
+								</ul>
+
+								<div class="left-filters__btn">
+									<button class="left-filters__button left-filters__button--active" type="submit">подобрать</button>
+									<button class="left-filters__reset" type="reset">Сбросить фильтр</button>
+								</div>
+
+
+
+							</form>
+
+						</div>
+						<div class="tabs__content left-filters__content" id="left-filter__2">Content</div>
+					</div>
+				</aside>
 				<div class="wares">
 					<div class="wares-list">
 
