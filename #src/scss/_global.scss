@@ -49,6 +49,7 @@ body {
 	font-size: 20px;
 	line-height: 23px;
 	color: $black;
+	min-width: 320px;
 }
 
 .container {
@@ -59,4 +60,18 @@ body {
 
 .page-section {
 	margin-bottom: 80px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.page-bottom {
+	flex: 0 0 auto;
 }

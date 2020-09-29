@@ -62,4 +62,7 @@ $(function () {
 		spacing: "7px",
 		fullStar: true
 	});
+	$('.menu__btn').on('click', function () {
+		$('.mobile-menu__gamburger').toggleClass('mobile-menu__gamburger--active');
+	});
 });
