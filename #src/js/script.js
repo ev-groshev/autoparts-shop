@@ -65,4 +65,8 @@ $(function () {
 	$('.menu__btn').on('click', function () {
 		$('.mobile-menu__gamburger').toggleClass('mobile-menu__gamburger--active');
 	});
+	$('.footer__top-drop').on('click', function () {
+		$(this).next().slideToggle();
+		$(this).toggleClass('footer__top-drop--active');
+	});
 });

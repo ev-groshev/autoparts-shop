@@ -859,7 +859,7 @@
 		}
 
 		&-inetshop {
-			max-width: 357px;
+			width: 357px;
 
 			.footer-list {
 				columns: 2;
@@ -1815,6 +1815,10 @@
 
 .mobile-menu__gamburger {
 	display: none;
+}
+
+.footer__top-drop {
+	pointer-events: none;
 }
 
 /* end product-page */
