@@ -43,6 +43,39 @@
 	.categories__inner {
 		justify-content: space-around;
 	}
+
+	.product-card__content-title {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.info__radios {
+		margin-left: 50px;
+	}
+
+	.info-list__item.item-title {
+		display: none;
+	}
+
+	.workhours__title,
+	.avitable__title,
+	.quantity__title {
+		display: block;
+
+	}
+
+	.info-list__item {
+		display: block;
+		padding-bottom: 20px;
+	}
+
+	.info-list__text {
+		display: block;
+		margin: 20px 0 17px;
+		font-size: 14px;
+		line-height: 16px;
+		color: rgba(#000, .5);
+	}
 }
 
 @media (max-width: 1100px) {
@@ -152,6 +185,38 @@
 	.products__item+.products__item {
 		margin-left: 30px;
 	}
+
+	.product-card__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product-card__content {
+		margin-top: 30px;
+	}
+
+	.product-card__box {
+		margin-top: 30px;
+	}
+
+	.info__tabs {
+		width: 1000px;
+	}
+}
+
+@media (max-width: 950px) {
+	.info__form {
+		display: block;
+	}
+
+	.info__radios {
+		margin-left: 0;
+	}
+
+	.info__radio {
+		display: block;
+		margin: 20px 0;
+	}
 }
 
 @media (max-width: 768px) {
@@ -212,6 +277,56 @@
 		background-image: url(../images/search-silver.svg);
 		width: 23px;
 		height: 23px;
+	}
+
+	.product-card__box {
+		width: 100%;
+
+		.product-card__sale-btn {
+			display: none;
+		}
+
+		.product-card__present {
+			display: none;
+		}
+
+		.product-card__credit {
+			display: none;
+		}
+
+		.product-card__price-old {
+			display: none;
+		}
+
+		.product-card__content-btn {
+			display: block;
+			margin-top: 20px;
+		}
+
+		.product-card__more {
+			margin-top: 25px;
+		}
+	}
+
+	.product-card__content {
+		order: -1;
+		width: 100%;
+
+		& .tabs__wrapper {
+			display: none;
+		}
+
+		& .product-card__container {
+			display: none;
+		}
+
+		.product-card__content-box {
+			margin-bottom: 10px;
+		}
+
+		.product-card__content-code {
+			margin-bottom: 10px;
+		}
 	}
 }
 
@@ -283,6 +398,37 @@
 
 }
 
+@media (max-width: 600px) {
+	.product-card__content-box {
+		display: none;
+	}
+
+	.info__label-search {
+		display: block;
+	}
+
+	.info__input-search {
+		margin-left: 0;
+		margin-top: 20px;
+		border-radius: 0;
+	}
+
+	.info-label {
+		width: 100%;
+	}
+
+	.product-card__box .product-card__content-btn {
+		width: 100%;
+	}
+
+	.info-list-btn button {
+		width: 100%;
+	}
+
+	.info-list__text {
+		text-align: center;
+	}
+}
 
 @media (max-width: 400px) {
 	.categories__item-img {
@@ -301,4 +447,9 @@
 	.products__title {
 		text-align: center;
 	}
+
+
+
+
+
 }
