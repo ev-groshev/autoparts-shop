@@ -26,6 +26,10 @@
 }
 
 @media (max-width: 1175px) {
+	/* .banner-section__slider-img {
+		width: 100%;
+	} */
+
 	.banner-section__inner {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -449,7 +453,9 @@
 		text-align: center;
 	}
 
-
+	.info-list__avitable {
+		white-space: nowrap;
+	}
 
 
 
