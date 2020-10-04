@@ -109,4 +109,7 @@ $(function () {
 		$(this).next().slideToggle();
 		$(this).toggleClass('footer__top-drop--active');
 	});
+	$('.catalog-filter__btn').on('click', function () {
+		$(".left-filters").slideToggle();
+	});
 });
