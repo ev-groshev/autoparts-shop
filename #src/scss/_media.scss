@@ -468,6 +468,15 @@
 }
 
 @media (max-width: 600px) {
+	.banner-section__slider .slick-dots {
+		bottom: 15px;
+	}
+
+	.banner-section__slider .slick-dots button {
+		width: 8px;
+		height: 8px;
+	}
+
 	.product-card__content-box {
 		display: none;
 	}
