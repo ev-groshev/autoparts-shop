@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -10,13 +10,646 @@
 </head>
 
 <body>
+	<div class="wrapper">
+		<div class="content">
+			@@include("components/_header.html")
 
-	@@include("components/_header.html")
+			<section class="banner-section page-section">
+				<div class="container">
+					<div class="banner-section__inner">
+						<div class="banner-section__slider">
+							<div class="banner-section__slider-item">
+								<img class="banner-section__slider-img" src="images/content/slider-img.jpg" alt="">
+							</div>
+							<div class="banner-section__slider-item">
+								<img class="banner-section__slider-img" src="images/content/slider-img.jpg" alt="">
+							</div>
+							<div class="banner-section__slider-item">
+								<img class="banner-section__slider-img" src="images/content/slider-img.jpg" alt="">
+							</div>
+							<div class="banner-section__slider-item">
+								<img class="banner-section__slider-img" src="images/content/slider-img.jpg" alt="">
+							</div>
+							<div class="banner-section__slider-item">
+								<img class="banner-section__slider-img" src="images/content/slider-img.jpg" alt="">
+							</div>
+							<div class="banner-section__slider-item">
+								<img class="banner-section__slider-img" src="images/content/slider-img.jpg" alt="">
+							</div>
+						</div>
+
+						<div class="banner-section__action action">
+							<div class="action__inner">
+								<div class="action__info">
+									<div class="action__info-text"> акция</div>
+
+								</div>
+								<div class="action__price">
+									<div class="action__price-new">
+										200
+									</div>
+									<div class="action__price-old">
+										500
+									</div>
+								</div>
+							</div>
+							<img class="action__img" src="images/content/lamp.png" alt="">
+							<div class="action__title">Лампочка mini...</div>
+							<div class="action__footer">
+								<div class="action__footer-text">
+									До конца акции осталось:
+								</div>
+								<div class="countdown">
+									<div class="countdown-dial">
+										<div class="countdown__number">00</div>
+										<div class="countdown__caption">часов</div>
+									</div>
+									<div class="countdown-dial">
+										<div class="countdown__number">20</div>
+										<div class="countdown__caption">минут</div>
+									</div>
+									<div class="countdown-dial">
+										<div class="countdown__number">00</div>
+										<div class="countdown__caption">секунд</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<div class="search page-section">
+				<div class="container">
+
+					<div class="tabs__wrapper">
+						<div class="mobile-overflow">
+							<div class="search__tabs tabs">
+								<a class="tab search__tabs-item tab--active" href="#tab1">Поиск по Vin</a>
+								<a class="tab search__tabs-item" href="#tab2">Поиск по марке</a>
+								<a class="tab search__tabs-item" href="#tab3">Поиск по названию товара</a>
+								<a class="tab search__tabs-item" href="#tab4">Поиск по артикулу</a>
+							</div>
+						</div>
+					</div>
 
 
+					<div class="tabs__container search__container">
+						<div id="tab1" class="tabs__content search__content-item tabs__content--active">
+							<form class="search__content-form">
+								<input class="search__content-input" type="text" placeholder="Введите Vin номер">
+								<button class="search__content-btn" type="submit">Искать</button>
+							</form>
+						</div>
+						<div id="tab2" class="tabs__content search__content-item">
+							<form class="search__content-form">
+								<input class="search__content-input" type="text" placeholder="Введите марку автомобиля">
+								<button class="search__content-btn" type="submit">Искать</button>
+							</form>
+						</div>
+						<div id="tab3" class="tabs__content search__content-item">
+							<form class="search__content-form">
+								<input class="search__content-input" type="text" placeholder="Введите название товара">
+								<button class="search__content-btn" type="submit">Искать</button>
+							</form>
+						</div>
 
-	@@include("components/_footer.html")
+						<div id="tab4" class="tabs__content search__content-item">
+							<form class="search__content-form">
+								<input class="search__content-input" type="text" placeholder="Введите артикул">
+								<button class="search__content-btn" type="submit">Искать</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<section class="categories page-section">
+				<div class="container">
+					<div class="categories__inner">
+
+						<a class="categories__item" href="#">
+							<div class="categories__item-info">
+								<div class="categories__item-title">Автохимия</div>
+								<div class="categories__item-text">Перейти</div>
+							</div>
+							<div class="categories__item-img">
+								<picture>
+									<source srcset="images/mini-categories-1.png" media="(max-width: 400px)">
+									<img src="images/categories-1.png" alt="">
+								</picture>
+							</div>
+						</a>
+						<a class="categories__item" href="#">
+							<div class="categories__item-info">
+								<div class="categories__item-title">Шины и диски</div>
+								<div class="categories__item-text">Перейти</div>
+							</div>
+							<div class="categories__item-img">
+								<picture>
+									<source srcset="images/mini-categories-2.png" media="(max-width: 400px)">
+									<img src="images/categories-2.png" alt="">
+								</picture>
+							</div>
+						</a>
+						<a class="categories__item" href="#">
+							<div class="categories__item-info">
+								<div class="categories__item-title">Инструменты</div>
+								<div class="categories__item-text">Перейти</div>
+							</div>
+							<div class="categories__item-img">
+								<picture>
+									<source srcset="images/mini-categories-3.png" media="(max-width: 400px)">
+									<img src="images/categories-3.png" alt="">
+								</picture>
+							</div>
+						</a>
+						<a class="categories__item" href="#">
+							<div class="categories__item-info">
+								<div class="categories__item-title">Запчасти на ТО</div>
+								<div class="categories__item-text">Перейти</div>
+							</div>
+							<div class="categories__item-img">
+								<picture>
+									<source srcset="images/mini-categories-4.png" media="(max-width: 400px)">
+									<img src="images/categories-4.png" alt="">
+								</picture>
+							</div>
+						</a>
+						<a class="categories__item" href="#">
+							<div class="categories__item-info">
+								<div class="categories__item-title">Автоэлектроника</div>
+								<div class="categories__item-text">Перейти</div>
+							</div>
+							<div class="categories__item-img">
+								<picture>
+									<source srcset="images/mini-categories-5.png" media="(max-width: 400px)">
+									<img src="images/categories-5.png" alt="">
+								</picture>
+							</div>
+						</a>
+						<a class="categories__item" href="#">
+							<div class="categories__item-info">
+								<div class="categories__item-title">Аксессуары
+									и другое</div>
+								<div class="categories__item-text">Перейти</div>
+							</div>
+							<div class="categories__item-img">
+								<picture>
+									<source srcset="images/mini-categories-6.png" media="(max-width: 400px)">
+									<img src="images/categories-6.png" alt="">
+								</picture>
+							</div>
+						</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="products page-section">
+				<div class="container">
+					<div class="products__title">Популярные товары</div>
+
+					<div class="tabs__wrapper">
+						<div class="mobile-overflow">
+							<div class="tabs products__tabs">
+								<a class="tab products__item tab--active" href="#product__item-1">запчасти</a>
+								<a class="tab products__item" href="#product__item-2">автохимия</a>
+								<a class="tab products__item" href="#product__item-3">шины и диски</a>
+								<a class="tab products__item" href="#product__item-4">автоэлектроника</a>
+								<a class="tab products__item" href="#product__item-5">инструменты</a>
+								<a class="tab products__item" href="#product__item-6">аксессуары и другое</a>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__container products__container">
+						<div id="product__item-1" class="tabs__content products__content tabs__content--active">
+							<div class="products-slider">
+
+								<div class="products-slider__item">
+									<div class="product product--sale">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-1.png" alt="">
+											</div>
+											<div class="product__title">
+												Ремень
+											</div>
+											<div class="product__price">
+												440
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale product--winter">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-2.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 205/80 R16 104Q Misha RF Power Grum
+											</div>
+											<div class="product__price">
+												11 680
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-3.png" alt="">
+											</div>
+											<div class="product__title">
+												Фара Nokian 2025
+											</div>
+											<div class="product__price">
+												680
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale product--summer product__notify">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 245/60 R18 105T Contyther Crosh Conta...
+											</div>
+											<div class="product__price">
+												440
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-1.png" alt="">
+											</div>
+											<div class="product__title">
+												Ремень
+											</div>
+											<div class="product__price">
+												440
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale product--winter">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-2.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 205/80 R16 104Q Misha RF Power Grum
+											</div>
+											<div class="product__price">
+												11 680
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-3.png" alt="">
+											</div>
+											<div class="product__title">
+												Фара Nokian 2025
+											</div>
+											<div class="product__price">
+												680
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale product--summer product__notify">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 245/60 R18 105T Contyther Crosh Conta...
+											</div>
+											<div class="product__price">
+												440
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div id="product__item-2" class="tabs__content products__content">slider-2</div>
+						<div id="product__item-3" class="tabs__content products__content">slider-3</div>
+						<div id="product__item-4" class="tabs__content products__content">slider-4</div>
+						<div id="product__item-5" class="tabs__content products__content">slider-5</div>
+						<div id="product__item-6" class="tabs__content products__content">slider-6</div>
+					</div>
+					<div class="products__more">
+						<a class="products__more-link" href="#">смотреть еще</a>
+					</div>
+
+				</div>
+
+			</section>
+
+			<div class="banner page-section">
+				<div class="container">
+					<a class="banner-link" href="#">
+						<picture>
+							<source srcset="images/content/banner-mini.jpg" media="(max-width: 400px)">
+							<img class="banner__img" src="images/content/banner.jpg" alt="">
+						</picture>
+
+					</a>
+				</div>
+			</div>
+
+			<section class="products page-section">
+				<div class="container">
+					<div class="products__title">С этим товаром покупают</div>
+
+					<div class="tabs__wrapper">
+						<div class="mobile-overflow">
+							<div class="tabs products__tabs">
+								<a class="tab products__item tab--active" href="#product__popular-1">запчасти</a>
+								<a class="tab products__item" href="#product__popular-2">автохимия</a>
+								<a class="tab products__item" href="#product__popular-3">шины и диски</a>
+								<a class="tab products__item" href="#product__popular-4">автоэлектроника</a>
+								<a class="tab products__item" href="#product__popular-5">инструменты</a>
+								<a class="tab products__item" href="#product__popular-6">аксессуары и другое</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="tabs__container products__container">
+						<div id="product__popular-1" class="tabs__content products__content tabs__content--active">
+							<div class="products-slider">
+
+								<div class="products-slider__item">
+									<div class="product product--sale">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 205/80 R16 104Q Misha RF Power Grum
+											</div>
+											<div class="product__price">
+												14 440
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale product--winter product__notify">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 205/80 R16 104Q Misha RF Power Grum
+											</div>
+											<div class="product__price">
+												11 680
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 205/80 R16 104Q Misha RF Power Grum
+											</div>
+											<div class="product__price">
+												16 800
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale product--summer product__notify">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 245/60 R18 105T Contyther Crosh Conta...
+											</div>
+											<div class="product__price">
+												440
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Ремень
+											</div>
+											<div class="product__price">
+												440
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale product--winter">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 205/80 R16 104Q Misha RF Power Grum
+											</div>
+											<div class="product__price">
+												11 680
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Фара Nokian 2025
+											</div>
+											<div class="product__price">
+												680
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+								<div class="products-slider__item">
+									<div class="product product--sale product--summer product__notify">
+										<button class="product__favorite"></button>
+										<button class="product__basket"><img src="images/basket.svg" alt=""></button>
+										<a class="product__notify-link" href="#">Сообщить о поступлении</a>
+										<a class="product__info" href="#">
+											<div class="product__hover-text">
+												быстрый просмотр
+											</div>
+											<div class="product__picture">
+												<img class="product__img" src="images/content/product-4.png" alt="">
+											</div>
+											<div class="product__title">
+												Шина 245/60 R18 105T Contyther Crosh Conta...
+											</div>
+											<div class="product__price">
+												440
+											</div>
+											<div class="product__notify-text">нет в наличии</div>
+										</a>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div id="product__popular-2" class="tabs__content products__content">slider-2</div>
+						<div id="product__popular-3" class="tabs__content products__content">slider-3</div>
+						<div id="product__popular-4" class="tabs__content products__content">slider-4</div>
+						<div id="product__popular-5" class="tabs__content products__content">slider-5</div>
+						<div id="product__popular-6" class="tabs__content products__content">slider-6</div>
+					</div>
+
+				</div>
+
+			</section>
+		</div>
+		<div class="page-bottom">
+			@@include("components/_footer.html")
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/script.min.js"></script>

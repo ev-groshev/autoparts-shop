@@ -12,6 +12,7 @@ html,
 body {
 	height: 100%;
 	position: relative;
+	overflow-y: auto;
 }
 
 ul,
@@ -31,12 +32,48 @@ h6 {
 a {
 	text-decoration: none;
 	color: inherit;
+	display: inline-block;
 }
 
-ul, li {
+ul,
+li {
 	list-style: none;
 }
+
 button:focus,
 input:focus {
 	outline: transparent;
+}
+
+body {
+	@extend %arial-regular;
+	font-size: 20px;
+	line-height: 23px;
+	color: $black;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page-section {
+	margin-bottom: 80px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.page-bottom {
+	flex: 0 0 auto;
 }
