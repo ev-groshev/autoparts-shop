@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Gulp</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Магазины</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Акции</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Доставка и оплата</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="menu__btn">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mobile-menu__gamburger">
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-user.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Войти</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-user.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Регистрация</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-heart.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Избранное</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-home.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Магазины</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-percent.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Акции</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-box.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Доставка
+                      и оплата</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Каталог запчастей</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Каталог ТО</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Шины </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Диски</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Аккумуляторы</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Автомасла</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Автолампы</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Аксессуары</a>
+                  </li>
+                </ul>
+                <a class="mobile-address" href="#">
+                  Санкт-Петербург, ул
+                  Большая Конюшенная, д 19
+                </a>
+              </div>
+              <a class="logo" href="#">
+                <picture class="logo__img">
+                  <source srcset="images/logo-small.svg" media="(max-width: 768px)">
+                  <img src="images/logo.svg" alt="">
+                </picture>
+
+              </a>
+
+
+              <div class="header__top-box">
+                <a class="header__top-adress" href="#">
+                  Санкт-Петербург, ул
+                  Большая Конюшенная, д 19
+                </a>
+                <ul class="user__list">
+                  <li class="user__item">
+                    <a class="user__list-link heart" href="#"></a>
+                  </li>
+                  <li class="user__item">
+                    <a class="user__list-link user" href="#"></a>
+                  </li>
+                  <li class="user__item">
+                    <a class="user__list-link basket" href="#">
+                      <div class="basket__num">1</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <ul class="menu-categories">
+              <li class="menu-categories__item">
+                <a class="menu-categories__link active" href="#">Каталог запчастей</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Каталог ТО</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Шины</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Диски</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Аккумуляторы</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Автомасла</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Автолампы</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Аксессуары</a>
+              </li>
+            </ul>
+            <div class="mobile-overflow">
+              <nav class="mobile__menu">
+
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Магазины</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Акции</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Доставка и оплата</a>
+                  </li>
+                </ul>
+
+              </nav>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </header>
+
+      <div class="breadcrumps page-section">
+        <div class="container">
+          <ul class="breadcrumps__list">
+            <li class="breadcrumps__list-item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="breadcrumps__list-item">
+              <a href="#">Шины</a>
+            </li>
+            <li class="breadcrumps__list-item">
+              <a href="#">Шины зимние</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- catalog -->
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__title">Нешипованные шины</div>
+
+          <div class="catalog__filters">
+            <div class="catalog__filter-items">
+              <a class="catalog__filter-item" href="#">Полноприводные</a>
+              <a class="catalog__filter-item" href="#">от 5000</a>
+              <a class="catalog__filter-item" href="#">Nokian</a>
+              <a class="catalog__filter-item" href="#">еще</a>
+            </div>
+            <div class="catalog__filter-btn">
+              <select class="filter-style filter-style__popularity">
+                <option>По полулярности</option>
+                <option>от меньшего</option>
+              </select>
+
+              <div class="button">
+                <button class="catalog__filter-btngrid catalog__filter-button catalog__filter-button--active">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="21" height="19" stroke="#48494D" stroke-width="2" />
+                    <rect x="6" y="5" width="4" height="4" fill="#48494D" />
+                    <rect x="6" y="12" width="4" height="4" fill="#48494D" />
+                    <rect x="13" y="5" width="4" height="4" fill="#48494D" />
+                    <rect x="13" y="12" width="4" height="4" fill="#48494D" />
+                  </svg>
+                </button>
+                <button class="catalog__filter-btnline catalog__filter-button">
+                  <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="1">
+                      <rect x="6" width="19" height="3" rx="1.5" fill="#48494D" />
+                      <rect x="6" y="8" width="19" height="3" rx="1.5" fill="#48494D" />
+                      <rect x="6" y="16" width="19" height="3" rx="1.5" fill="#48494D" />
+                      <rect width="3" height="3" rx="1.5" fill="#48494D" />
+                      <rect y="8" width="3" height="3" rx="1.5" fill="#48494D" />
+                      <rect y="16" width="3" height="3" rx="1.5" fill="#48494D" />
+                    </g>
+                  </svg>
+                </button>
+
+              </div>
+              <button class="catalog-filter__btn">Фильтры</button>
+
+            </div>
+          </div>
+
+          <div class="catalog__wrapper">
+            <aside class="left-filters">
+              <div class="tabs__wrapper">
+                <div class="tabs left-filters__tabs">
+                  <a class="tab left-filters__tab tab--active" href="#left-filter__1">Параметры</a>
+                  <a class="tab left-filters__tab" href="#left-filter__2">по марке</a>
+                </div>
+              </div>
+
+              <div class="tabs__container left-filters__container">
+                <div class="tabs__content  left-filters__content tabs__content--active" id="left-filter__1">
+
+                  <form class="left-filter__form">
+                    <ul class="left-filter__list">
+
+                      <li class="left-filter__item-drop">
+                        <div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Сезонность
+                        </div>
+
+                        <div class="left-filter__item-box">
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style" type="checkbox">
+                              Зимние <span class="question" title="Зимние шины"></span>
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style" type="checkbox">
+                              Летние
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="left-filter__item-drop">
+                        <div class="left-filter__item-title">Тип шин</div>
+
+                        <div class="left-filter__item-box">
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              Все
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style" type="checkbox">
+                              Шипованные <span class="question" title="Шипованные шины"></span>
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style" type="checkbox">
+                              Нешипованные <span class="question" title="Нешипованные шины"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="left-filter__item-drop">
+                        <div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Цена</div>
+
+                        <div class="left-filter__item-box">
+
+
+                          <input type="text" class="js-range-slider" data-min="2000" data-max="12000" data-from="2700" data-to="7000">
+                        </div>
+                      </li>
+                      <li class="left-filter__item-drop">
+                        <div class="filter-box">
+                          <div class="left-filter__item-title">Диаметр <span class="question" title="Диаметр"></span>
+                          </div>
+                          <select class="filter-style left-filter__item-select">
+                            <option>205</option>
+                            <option>210</option>
+                            <option>215</option>
+                            <option>220</option>
+                          </select>
+                        </div>
+                        <div class="filter-box">
+                          <div class="left-filter__item-title">Профиль <span class="question" title="Профиль"></span>
+                          </div>
+                          <select class="filter-style left-filter__item-select">
+                            <option>123</option>
+                            <option>125</option>
+                            <option>130</option>
+                            <option>135</option>
+                          </select>
+                        </div>
+                        <div class="filter-box">
+                          <div class="left-filter__item-title">Ширина <span class="question" title="Ширина"></span>
+                          </div>
+                          <select class="filter-style left-filter__item-select">
+                            <option>85</option>
+                            <option>90</option>
+                            <option>95</option>
+                            <option>100</option>
+                          </select>
+                        </div>
+                      </li>
+
+                      <li class="left-filter__item-drop">
+                        <div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Бренд</div>
+
+                        <div class="left-filter__item-box">
+                          <input class="filter-item__search" type="text" placeholder="Введите бренд шины">
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox" checked>
+                              B Gudrich
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox" checked>
+                              Wridrestone
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox">
+                              Rarym
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox">
+                              BF hide
+                            </label>
+                          </div>
+
+                          <a class="show-more" href="#">Показать еще</a>
+                        </div>
+                      </li>
+
+                      <li class="left-filter__item-drop">
+                        <div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Модель</div>
+
+                        <div class="left-filter__item-box">
+                          <input class="filter-item__search" type="text" placeholder="Введите модель шины">
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox" checked>
+                              ALINA
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox" checked>
+                              BLIWWAS
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox">
+                              FORCE Moode
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox">
+                              ICE Gide
+                            </label>
+                          </div>
+
+                          <a class="show-more" href="#">Показать еще</a>
+                        </div>
+                      </li>
+
+                      <li class="left-filter__item-drop">
+                        <div class="left-filter__item-title">Технология
+                          <span class="question" title="Технология"></span>
+                        </div>
+                        <div class="left-filter__item-box">
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox">
+                              Да
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox">
+                              Нет
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+
+
+
+                      <li class="left-filter__item-drop">
+                        <div class="left-filter__item-title filter-item__drop filter-item__drop--active ">Страны</div>
+
+                        <div class="left-filter__item-box">
+
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox" checked>
+                              Россия
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox" checked>
+                              Германия
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox">
+                              Россия
+                            </label>
+                          </div>
+                          <div class="left-filter__item-input">
+                            <label class="left-filter__item-label">
+                              <input class="filter-style filter-style__other" type="checkbox">
+                              Германия
+                            </label>
+                          </div>
+
+                          <a class="show-more" href="#">Показать еще</a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div class="left-filters__btn">
+                      <button class="left-filters__button" type="submit">подобрать</button>
+                      <button class="left-filters__reset" type="reset">Сбросить фильтр</button>
+                    </div>
+
+
+
+                  </form>
+
+                </div>
+                <div class="tabs__content left-filters__content" id="left-filter__2">Content</div>
+              </div>
+            </aside>
+
+
+            <div class="wares">
+              <div class="wares-list">
+
+                <div class="product	 product--sale product__notify">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+
+                <div class="product  product--winter">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+                <div class="product product--sale product--winter product__notify">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+                <div class="product product--sale product--winter product__notify">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+                <div class="product  product--winter">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+                <div class="product product--sale product--winter product__notify">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+                <div class="product product--sale product--winter product__notify">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+                <div class="product  product--winter">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+                <div class="product product--sale product--winter product__notify">
+                  <button class="product__favorite"></button>
+                  <button class="product__basket">
+                    <img src="images/basket.svg" alt="">
+                  </button>
+                  <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product__info" href="#">
+                    <div class="product__hover-text">
+                      быстрый просмотр
+                    </div>
+                    <div class="product__picture">
+                      <img class="product__img" src="images/content/product-2.png" alt="">
+                    </div>
+                    <div class="product__title">
+                      Шина 205/80 R16 104Q Misha RF Power Grum
+                    </div>
+                    <div class="product__price">
+                      11 680
+                    </div>
+                    <div class="product__notify-text">нет в наличии</div>
+                  </a>
+                </div>
+
+              </div>
+              <div class="pagination">
+                <ul class="pagination-list">
+                  <li class="pagination-list__item active">
+                    <a href="#">1</a>
+                  </li>
+                  <li class="pagination-list__item">
+                    <a href="#">2</a>
+                  </li>
+                  <li class="pagination-list__item">
+                    <a href="#">3</a>
+                  </li>
+                  <li class="pagination-list__item">
+                    <a href="#">4</a>
+                  </li>
+                  <li class="pagination-list__item">
+                    <a href="#">5</a>
+                  </li>
+                  <li class="pagination-list__item">
+                    <a href="#">...</a>
+                  </li>
+                  <li class="pagination-list__item">
+                    <a href="#">11</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <!-- end catalog -->
+    <div class="page-bottom">
+      <footer class="footer">
+
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__top-inner">
+              <div class="footer__top-item footer__top-newslatter">
+                <div class="footer__top-title">Подпишитесь на нашу рассылку
+                  и узнавайте о акция быстрее</div>
+                <form class="footer-form" action="#">
+                  <input class="footer-form__input" type="email" placeholder="Введите ваш e-mail">
+                  <button class="footer-form__btn" type="submit">Отправить</button>
+                </form>
+              </div>
+              <div class="footer__top-item">
+                <div class="footer__top-title footer__top-drop">Информация</div>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Контакты</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Реквизиты</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Магазины</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__top-item">
+                <div class="footer__top-title footer__top-drop">Сервисный центр</div>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#">Доставка и самовывоз</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Оплата</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Возврат-обмен</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Новости</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__top-item footer__top-inetshop">
+                <div class="footer__top-title footer__top-drop">Интернет-магазин</div>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#">Доставка и самовывоз</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Оплата</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Возврат-обмен</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Новости</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Акции</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Договор оферты</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Политика обработки персональных данных</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <a class="footer__bottom-link" href="#">Интернет-магазин автозапчастей</a>
+          </div>
+        </div>
+
+
+      </footer>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

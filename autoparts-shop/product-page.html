@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Gulp</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Магазины</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Акции</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Доставка и оплата</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="menu__btn">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mobile-menu__gamburger">
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-user.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Войти</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-user.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Регистрация</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-heart.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Избранное</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-home.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Магазины</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-percent.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Акции</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <img src="images/mob-box.svg" alt="">
+                    <a class="mobile-menu__item-link" href="#">Доставка
+                      и оплата</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Каталог запчастей</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Каталог ТО</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Шины </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Диски</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Аккумуляторы</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Автомасла</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Автолампы</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__item-link" href="#">Аксессуары</a>
+                  </li>
+                </ul>
+                <a class="mobile-address" href="#">
+                  Санкт-Петербург, ул
+                  Большая Конюшенная, д 19
+                </a>
+              </div>
+              <a class="logo" href="#">
+                <picture class="logo__img">
+                  <source srcset="images/logo-small.svg" media="(max-width: 768px)">
+                  <img src="images/logo.svg" alt="">
+                </picture>
+
+              </a>
+
+
+              <div class="header__top-box">
+                <a class="header__top-adress" href="#">
+                  Санкт-Петербург, ул
+                  Большая Конюшенная, д 19
+                </a>
+                <ul class="user__list">
+                  <li class="user__item">
+                    <a class="user__list-link heart" href="#"></a>
+                  </li>
+                  <li class="user__item">
+                    <a class="user__list-link user" href="#"></a>
+                  </li>
+                  <li class="user__item">
+                    <a class="user__list-link basket" href="#">
+                      <div class="basket__num">1</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <ul class="menu-categories">
+              <li class="menu-categories__item">
+                <a class="menu-categories__link active" href="#">Каталог запчастей</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Каталог ТО</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Шины</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Диски</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Аккумуляторы</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Автомасла</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Автолампы</a>
+              </li>
+              <li class="menu-categories__item">
+                <a class="menu-categories__link" href="#">Аксессуары</a>
+              </li>
+            </ul>
+            <div class="mobile-overflow">
+              <nav class="mobile__menu">
+
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Магазины</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Акции</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Доставка и оплата</a>
+                  </li>
+                </ul>
+
+              </nav>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </header>
+
+      <div class="breadcrumps">
+        <div class="container">
+          <ul class="breadcrumps__list">
+            <li class="breadcrumps__list-item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="breadcrumps__list-item">
+              <a href="#">Шины</a>
+            </li>
+            <li class="breadcrumps__list-item">
+              <a href="#">Шины зимние</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="product-card page-section">
+        <div class="container">
+
+          <div class="product-card__inner">
+            <div class="product-card__box product--winter">
+              <div class="product-card__sale">
+                <button class="product-card__sale-btn">Sale</button>
+                <div class="product-card__present">
+                  + подарок
+                </div>
+                <div class="product-card__credit">
+                  0/0/24 <span>625 ₽ в месяц</span>
+                </div>
+              </div>
+              <img class="product-card__img" src="images/content/product-large.png" alt="">
+              <div class="product-card__price">
+                <div class="product-card__price-old">12 981 ₽</div>
+              </div>
+              <div class="product-card__price">
+                <div class="product-card__price-new">15 981 ₽</div>
+              </div>
+              <button class="product-card__content-btn">
+                купить
+              </button>
+              <a class="product-card__more" href="#">Нашли дешевле? Снизим цену!</a>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__content-title">
+                Шина 205/80 R16 104Q Misha RF Power Grum
+              </div>
+              <div class="product-card__content-code">
+                Код товара: 1380198269
+              </div>
+              <div class="product-card__content-box">
+                <a class="product-card__content-favorite" href="#">
+                  <img src="images/favorite.svg" alt="">
+                </a>
+                <a class="product-card__content-compare" href="#">
+                  <img src="images/compare.svg" alt="">
+                </a>
+                <a class="product-card__content-rate" href="#">
+                  <div class="rateYo" data-rateyo-rating="2"></div>
+                </a>
+              </div>
+              <div class="tabs__wrapper">
+                <div class="tabs product-card__tabs">
+                  <a class="tab product-card__tab tab--active" href="#product-card__tab-1">Характеристики</a>
+                  <a class="tab product-card__tab" href="#product-card__tab-2">Наличие в автосалоне</a>
+                </div>
+              </div>
+
+              <div class="tabs__container product-card__container">
+                <div class="tabs__content product-card__content tabs__content--active" id="product-card__tab-1">
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <div class="product-card__item-name">Производитель</div>
+                      <div class="product-card__item-value">Кама</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-name">Диаметр</div>
+                      <div class="product-card__item-value">20</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-name">Сезон</div>
+                      <div class="product-card__item-value">Всесезонная</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-name">Индекс скорости нагрузки</div>
+                      <div class="product-card__item-value">141/139L</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-name">Серия</div>
+                      <div class="product-card__item-value">HN 06</div>
+                    </li>
+                  </ul>
+
+                  <a class="product-card__content-more" href="#">
+                    Показать еще
+                  </a>
+                  <button class="product-card__content-btn">
+                    купить шину
+                  </button>
+                </div>
+
+                <div class="tabs__content product-card__content" id="product-card__tab-2">
+                  content-2
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="info page-section">
+        <div class="container">
+          <div class="tabs__wrapper">
+            <div class="mobile-overflow">
+              <div class="tabs info__tabs">
+                <a class="tab info__tab " href="#info__tab-1">О товаре</a>
+                <a class="tab info__tab" href="#info__tab-2">Характеристики</a>
+                <a class="tab info__tab" href="#info__tab-3">Отзывы</a>
+                <a class="tab info__tab tab--active" href="#info__tab-4">Самовывоз</a>
+                <a class="tab info__tab" href="#info__tab-5">Доставка</a>
+                <a class="tab info__tab" href="#info__tab-6">Услуги</a>
+                <a class="tab info__tab" href="#info__tab-7">Бизнесу</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__container info__container">
+            <div class="tabs__content info__content" id="info__tab-1">content-1</div>
+            <div class="tabs__content info__content" id="info__tab-2">content-2</div>
+            <div class="tabs__content info__content" id="info__tab-3">content-3</div>
+            <div class="tabs__content info__content tabs__content--active" id="info__tab-4">
+              <form class="info__form" action="#">
+
+                <div class="info-label">
+                  <label class="info__label-search">
+                    Магазин
+                    <input class="info__input-search" type="text">
+                  </label>
+                  <button class="info-label__btn" type="submit"></button>
+                </div>
+
+
+                <div class="info__radios">
+                  <label class="info__radio">
+                    <input class="filter-style" type="radio" name="info-radio">
+                    Забрать сегодня
+                  </label>
+                  <label class="info__radio">
+                    <input class="filter-style" type="radio" name="info-radio" checked>
+                    Забрать завтра и позднее
+                  </label>
+                </div>
+
+              </form>
+
+              <ul class="info-list">
+                <li class="info-list__item item-title">
+                  <div class="info-list__address">Адрес</div>
+                  <div class="info-list__workhours">Режим работы</div>
+                  <div class="info-list__avitable">Доступно</div>
+
+                  <div class="info-list__quantity">Количество</div>
+                  <div class="info-list-btn"></div>
+                </li>
+
+                <li class="info-list__item">
+                  <div class="info-list__address">
+                    Санкт-Петербург, ул Большая Конюшенная, д 19
+                  </div>
+                  <div class="info-list__workhours">
+                    <div class="workhours__title">
+                      Режим работы
+                    </div>
+                    <div class="workhours">
+                      <div class="workhours__week">пн-сб:</div>
+                      <div class="workhours__time">08:00-19:00</div>
+                    </div>
+                    <div class="workhours">
+                      <div class="workhours__week">вс:</div>
+                      <div class="workhours__time">09:00-17:00</div>
+                    </div>
+                  </div>
+                  <div class="info-list__avitable">
+                    <div class="avitable__title">
+                      Доступно
+                    </div>
+                    Завтра и позднее
+                  </div>
+                  <div class="info-list__quantity">
+                    <div class="quantity__title">Количество</div>
+                    Мало
+                  </div>
+                  <div class="info-list__text">
+                    Нажимая на эту кнопку вы сможете забрать товар вне очереди
+                  </div>
+                  <div class="info-list-btn">
+                    <button type="submit">Купить</button>
+                  </div>
+                </li>
+                <li class="info-list__item">
+                  <div class="info-list__address">
+                    Санкт-Петербург, ул Большая Конюшенная, д 19
+                  </div>
+                  <div class="info-list__workhours">
+                    <div class="workhours__title">
+                      Режим работы
+                    </div>
+                    <div class="workhours">
+                      <div class="workhours__week">пн-сб:</div>
+                      <div class="workhours__time">08:00-19:00</div>
+                    </div>
+                    <div class="workhours">
+                      <div class="workhours__week">вс:</div>
+                      <div class="workhours__time">09:00-17:00</div>
+                    </div>
+                  </div>
+                  <div class="info-list__avitable">
+                    <div class="avitable__title">
+                      Доступно
+                    </div>Завтра и позднее
+                  </div>
+                  <div class="info-list__quantity">
+                    <div class="quantity__title">Количество</div>
+                    Много
+                  </div>
+                  <div class="info-list__text">
+                    Нажимая на эту кнопку вы сможете забрать товар вне очереди
+                  </div>
+                  <div class="info-list-btn">
+                    <button type="submit">Купить</button>
+                  </div>
+                </li>
+                <li class="info-list__item">
+                  <div class="info-list__address">
+                    Санкт-Петербург, ул Большая Конюшенная, д 19
+                  </div>
+                  <div class="info-list__workhours">
+                    <div class="workhours__title">
+                      Режим работы
+                    </div>
+                    <div class="workhours">
+                      <div class="workhours__week">пн-сб:</div>
+                      <div class="workhours__time">08:00-19:00</div>
+                    </div>
+                    <div class="workhours">
+                      <div class="workhours__week">вс:</div>
+                      <div class="workhours__time">09:00-17:00</div>
+                    </div>
+                  </div>
+                  <div class="info-list__avitable">
+                    <div class="avitable__title">
+                      Доступно
+                    </div>Завтра и позднее
+                  </div>
+                  <div class="info-list__quantity">
+                    <div class="quantity__title">Количество</div>
+                    Достаточно
+                  </div>
+                  <div class="info-list__text">
+                    Нажимая на эту кнопку вы сможете забрать товар вне очереди
+                  </div>
+                  <div class="info-list-btn">
+                    <button type="submit">Купить</button>
+                  </div>
+                </li>
+                <li class="info-list__item">
+                  <div class="info-list__address">
+                    Санкт-Петербург, ул Большая Конюшенная, д 19
+                  </div>
+                  <div class="info-list__workhours">
+                    <div class="workhours__title">
+                      Режим работы
+                    </div>
+                    <div class="workhours">
+                      <div class="workhours__week">пн-сб:</div>
+                      <div class="workhours__time">08:00-19:00</div>
+                    </div>
+                    <div class="workhours">
+                      <div class="workhours__week">вс:</div>
+                      <div class="workhours__time">09:00-17:00</div>
+                    </div>
+                  </div>
+                  <div class="info-list__avitable">
+                    <div class="avitable__title">
+                      Доступно
+                    </div>Завтра и позднее
+                  </div>
+                  <div class="info-list__quantity">
+                    <div class="quantity__title">Количество</div>
+                    Мало
+                  </div>
+                  <div class="info-list__text">
+                    Нажимая на эту кнопку вы сможете забрать товар вне очереди
+                  </div>
+                  <div class="info-list-btn">
+                    <button type="submit">Купить</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs__content info__content" id="info__tab-5">content-5</div>
+            <div class="tabs__content info__content" id="info__tab-6">content-6</div>
+            <div class="tabs__content info__content" id="info__tab-7">content-7</div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="products page-section">
+        <div class="container">
+          <div class="products__title">С этим товаром покупают</div>
+
+          <div class="tabs__wrapper">
+            <div class="mobile-overflow">
+              <div class="tabs products__tabs">
+                <a class="tab products__item " href="#product__popular-1">запчасти</a>
+                <a class="tab products__item" href="#product__popular-2">автохимия</a>
+                <a class="tab products__item tab--active" href="#product__popular-3">шины и диски</a>
+                <a class="tab products__item" href="#product__popular-4">автоэлектроника</a>
+                <a class="tab products__item" href="#product__popular-5">инструменты</a>
+                <a class="tab products__item" href="#product__popular-6">аксессуары и другое</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__container products__container">
+            <div id="product__popular-1" class="tabs__content products__content tabs__content--active">
+              <div class="products-slider">
+
+                <div class="products-slider__item">
+                  <div class="product product--sale">
+                    <button class="product__favorite"></button>
+                    <button class="product__basket">
+                      <img src="images/basket.svg" alt="">
+                    </button>
+                    <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                    <a class="product__info" href="#">
+                      <div class="product__hover-text">
+                        быстрый просмотр
+                      </div>
+                      <div class="product__picture">
+                        <img class="product__img" src="images/content/product-4.png" alt="">
+                      </div>
+                      <div class="product__title">
+                        Шина 205/80 R16 104Q Misha RF Power Grum
+                      </div>
+                      <div class="product__price">
+                        14 440
+                      </div>
+                      <div class="product__notify-text">нет в наличии</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider__item">
+                  <div class="product product--sale product--winter product__notify">
+                    <button class="product__favorite"></button>
+                    <button class="product__basket">
+                      <img src="images/basket.svg" alt="">
+                    </button>
+                    <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                    <a class="product__info" href="#">
+                      <div class="product__hover-text">
+                        быстрый просмотр
+                      </div>
+                      <div class="product__picture">
+                        <img class="product__img" src="images/content/product-4.png" alt="">
+                      </div>
+                      <div class="product__title">
+                        Шина 205/80 R16 104Q Misha RF Power Grum
+                      </div>
+                      <div class="product__price">
+                        11 680
+                      </div>
+                      <div class="product__notify-text">нет в наличии</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider__item">
+                  <div class="product">
+                    <button class="product__favorite"></button>
+                    <button class="product__basket">
+                      <img src="images/basket.svg" alt="">
+                    </button>
+                    <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                    <a class="product__info" href="#">
+                      <div class="product__hover-text">
+                        быстрый просмотр
+                      </div>
+                      <div class="product__picture">
+                        <img class="product__img" src="images/content/product-4.png" alt="">
+                      </div>
+                      <div class="product__title">
+                        Шина 205/80 R16 104Q Misha RF Power Grum
+                      </div>
+                      <div class="product__price">
+                        16 800
+                      </div>
+                      <div class="product__notify-text">нет в наличии</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider__item">
+                  <div class="product product--sale product--summer product__notify">
+                    <button class="product__favorite"></button>
+                    <button class="product__basket">
+                      <img src="images/basket.svg" alt="">
+                    </button>
+                    <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                    <a class="product__info" href="#">
+                      <div class="product__hover-text">
+                        быстрый просмотр
+                      </div>
+                      <div class="product__picture">
+                        <img class="product__img" src="images/content/product-4.png" alt="">
+                      </div>
+                      <div class="product__title">
+                        Шина 245/60 R18 105T Contyther Crosh Conta...
+                      </div>
+                      <div class="product__price">
+                        440
+                      </div>
+                      <div class="product__notify-text">нет в наличии</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider__item">
+                  <div class="product product--sale">
+                    <button class="product__favorite"></button>
+                    <button class="product__basket">
+                      <img src="images/basket.svg" alt="">
+                    </button>
+                    <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                    <a class="product__info" href="#">
+                      <div class="product__hover-text">
+                        быстрый просмотр
+                      </div>
+                      <div class="product__picture">
+                        <img class="product__img" src="images/content/product-4.png" alt="">
+                      </div>
+                      <div class="product__title">
+                        Ремень
+                      </div>
+                      <div class="product__price">
+                        440
+                      </div>
+                      <div class="product__notify-text">нет в наличии</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider__item">
+                  <div class="product product--sale product--winter">
+                    <button class="product__favorite"></button>
+                    <button class="product__basket">
+                      <img src="images/basket.svg" alt="">
+                    </button>
+                    <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                    <a class="product__info" href="#">
+                      <div class="product__hover-text">
+                        быстрый просмотр
+                      </div>
+                      <div class="product__picture">
+                        <img class="product__img" src="images/content/product-4.png" alt="">
+                      </div>
+                      <div class="product__title">
+                        Шина 205/80 R16 104Q Misha RF Power Grum
+                      </div>
+                      <div class="product__price">
+                        11 680
+                      </div>
+                      <div class="product__notify-text">нет в наличии</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider__item">
+                  <div class="product">
+                    <button class="product__favorite"></button>
+                    <button class="product__basket">
+                      <img src="images/basket.svg" alt="">
+                    </button>
+                    <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                    <a class="product__info" href="#">
+                      <div class="product__hover-text">
+                        быстрый просмотр
+                      </div>
+                      <div class="product__picture">
+                        <img class="product__img" src="images/content/product-4.png" alt="">
+                      </div>
+                      <div class="product__title">
+                        Фара Nokian 2025
+                      </div>
+                      <div class="product__price">
+                        680
+                      </div>
+                      <div class="product__notify-text">нет в наличии</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider__item">
+                  <div class="product product--sale product--summer product__notify">
+                    <button class="product__favorite"></button>
+                    <button class="product__basket">
+                      <img src="images/basket.svg" alt="">
+                    </button>
+                    <a class="product__notify-link" href="#">Сообщить о поступлении</a>
+                    <a class="product__info" href="#">
+                      <div class="product__hover-text">
+                        быстрый просмотр
+                      </div>
+                      <div class="product__picture">
+                        <img class="product__img" src="images/content/product-4.png" alt="">
+                      </div>
+                      <div class="product__title">
+                        Шина 245/60 R18 105T Contyther Crosh Conta...
+                      </div>
+                      <div class="product__price">
+                        440
+                      </div>
+                      <div class="product__notify-text">нет в наличии</div>
+                    </a>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div id="product__popular-2" class="tabs__content products__content">slider-2</div>
+            <div id="product__popular-3" class="tabs__content products__content">slider-3</div>
+            <div id="product__popular-4" class="tabs__content products__content">slider-4</div>
+            <div id="product__popular-5" class="tabs__content products__content">slider-5</div>
+            <div id="product__popular-6" class="tabs__content products__content">slider-6</div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <div class="page-bottom">
+      <footer class="footer">
+
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__top-inner">
+              <div class="footer__top-item footer__top-newslatter">
+                <div class="footer__top-title">Подпишитесь на нашу рассылку
+                  и узнавайте о акция быстрее</div>
+                <form class="footer-form" action="#">
+                  <input class="footer-form__input" type="email" placeholder="Введите ваш e-mail">
+                  <button class="footer-form__btn" type="submit">Отправить</button>
+                </form>
+              </div>
+              <div class="footer__top-item">
+                <div class="footer__top-title footer__top-drop">Информация</div>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#">О компании</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Контакты</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Реквизиты</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Магазины</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__top-item">
+                <div class="footer__top-title footer__top-drop">Сервисный центр</div>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#">Доставка и самовывоз</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Оплата</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Возврат-обмен</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Новости</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__top-item footer__top-inetshop">
+                <div class="footer__top-title footer__top-drop">Интернет-магазин</div>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#">Доставка и самовывоз</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Оплата</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Возврат-обмен</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Новости</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Акции</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Договор оферты</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#">Политика обработки персональных данных</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <a class="footer__bottom-link" href="#">Интернет-магазин автозапчастей</a>
+          </div>
+        </div>
+
+
+      </footer>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
